@@ -40,7 +40,7 @@ herunterladen und bearbeiten möchtet
 müsst ihr die folgenden Schritte befolgen.
 
 1. Zuerst solltet ihr dieses Projekt als Zip Archiv herunterladen. Klickt auf den grünen Knopf mit der Aufschrift "Code" und dann auf den Menüeintrag "Download ZIP". Lasst Euch beim Öffnen dieser ZIP Datei von Euren Eltern helfen.
-https://github.com/martinjanfischer/AsteroidsUnityAndroid.git
+https://github.com/martinjanfischer/EvFBW_Coding_2023_F.git
 ![github01](Readme/github01.jpg)
 
 2. Danach solltet ihr das Programm Unity Hub herunterladen und installieren.
