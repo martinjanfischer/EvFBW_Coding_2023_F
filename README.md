@@ -18,7 +18,7 @@ Wir arbeiten auf Windows 11 Computern und installieren dort
 
 ### Für die Minecraft Mod Programmierer
 - die Community Version der Entwicklungsumgebung __IntelliJ__ von
-[www.jetbrains.com](https://www.jetbrains.com/intellij/download/#section=windows)
+[www.jetbrains.com](https://www.jetbrains.com/de-de/idea/download/?section=windows)
 
 ### Für die Unity Programmierer
 Seht dazu die Beschreibung des Spiels "Solar Parcour" in dem folgenden Abschnitt weiter unten.
