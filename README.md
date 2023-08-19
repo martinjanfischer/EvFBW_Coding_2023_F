@@ -118,8 +118,7 @@ dann klickt auf das Menü "File, Build Settings...".
 
 14. In dem nächsten Fenster wählt Ihr zuerst oben links eine Szene aus
 die Ihr in dem Installationspaket haben wollt,
-dann wählt ihr links die Plattform "Android" aus,
-und klickt dann zuletzt unten rechts auf den Knopf "Build".
+dann wählt ihr links die Plattform "Android" aus. Wenn ihr diese Einstellung zum ersten Mal durchführt, dann gibt es unten rechts einen Knopf "Switch Version" den ihr mit der Maus anklickt. Danach sollte derselbe Knopf die Aufschrift "Build" anzeigen. Zuletzt klickt ihr genau auf diesen Knopf "Build".
 ![Unity17](Readme/Unity17.jpg)
 
 15. In dem nächsten Fenster wählt Ihr ein Verzeichnis aus,
