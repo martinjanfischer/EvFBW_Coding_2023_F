@@ -1218,11 +1218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6900554915606097265, guid: 3cc6ab7e0eaf3c741b1c01ef7b82a3e3, type: 3}
       propertyPath: m_Schub
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6900554915606097265, guid: 3cc6ab7e0eaf3c741b1c01ef7b82a3e3, type: 3}
       propertyPath: m_WinkelGeschwindigkeit
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cc6ab7e0eaf3c741b1c01ef7b82a3e3, type: 3}
