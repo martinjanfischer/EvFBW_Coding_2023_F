@@ -247,8 +247,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38102b3f2d3db084faee7f8ded4bec52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Ziel: {fileID: 0}
+  m_Ziel: {fileID: 897327616}
   m_LevelGrenzen: {fileID: 1528158361}
+--- !u!4 &897327616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4690231534178566903, guid: 2102c8a9a67af01449d31fd2a05bc913, type: 3}
+  m_PrefabInstance: {fileID: 1549732948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1026962910
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +555,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4690231534178566887, guid: 2102c8a9a67af01449d31fd2a05bc913, type: 3}
+      propertyPath: m_LevelGrenzen
+      value: 
+      objectReference: {fileID: 1528158361}
     - target: {fileID: 4690231534178566900, guid: 2102c8a9a67af01449d31fd2a05bc913, type: 3}
       propertyPath: m_Name
       value: Player3

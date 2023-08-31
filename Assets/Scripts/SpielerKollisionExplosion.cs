@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpielerKollisionExplosion : MonoBehaviour
 {
-    Rigidbody m_Rigidbody;
+    Rigidbody2D m_Rigidbody;
 
     public float m_ImpulsDerZerstoerung = 25f;
     public GameObject m_PrefabExplosionAnimation;
@@ -14,7 +14,7 @@ public class SpielerKollisionExplosion : MonoBehaviour
     void Start()
     {
         // Hole Rigidbody von dem GameObject an dem dieses Script zugewiesen ist
-        m_Rigidbody = GetComponent<Rigidbody>();
+        m_Rigidbody = GetComponent<Rigidbody2D>();
     }
 
     // OnCollisionEnter2D wird aufgerufen bei jedem Kollisionsereignis
@@ -32,10 +32,10 @@ public class SpielerKollisionExplosion : MonoBehaviour
                 if (objectPrefabExplosionAnimation.TryGetComponent(out Animation m_ExplosionAnimation))
                 {
                     m_ExplosionAnimation.Play("explosion");
-                    Destroy(objectPrefabExplosionAnimation, 0.5f);
+                    //Destroy(objectPrefabExplosionAnimation, 0.5f);
                 }
             }
-            kollision.gameObject.SendMessage("Füge Schaden hinzu", 10);
+            //kollision.gameObject.SendMessage("Füge Schaden hinzu", 10);
         }
     }
 }
