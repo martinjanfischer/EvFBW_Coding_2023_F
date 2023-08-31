@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SpielerBewegungGravitation : MonoBehaviour
 {
-    Rigidbody2D m_Rigidbody;
+    Rigidbody m_Rigidbody;
 
     // Start wird aufgerufen bevor das erste Bild aktualisiert wird
     void Start()
     {
         // Hole Rigidbody von dem GameObject an dem dieses Script zugewiesen ist
-        m_Rigidbody = GetComponent<Rigidbody2D>();
+        m_Rigidbody = GetComponent<Rigidbody>();
     }
 
     // Korrekte Gravitations Konstante. Einheiten dyne-m^2/kg^2
@@ -38,19 +38,22 @@ public class SpielerBewegungGravitation : MonoBehaviour
             if (planet != null)
             {
                 //Debug.Log("Planet : ");
-                Rigidbody2D rigidBodyPlanet = planet.GetComponent<Rigidbody2D>();
+                
+                Rigidbody rigidBodyPlanet = planet.GetComponent<Rigidbody>();
                 if (rigidBodyPlanet != null)
                 {
-                    //Debug.Log("RigidBody2D Planet : " + rigidBodyPlanet.mass);
+                    //Debug.Log("RigidBody Planet : " + rigidBodyPlanet.mass);
                     kraftGravitation += BerechneGravitationsKraft(rigidBodyPlanet);
                     //Debug.Log("kraftGravitation : " + kraftGravitation.ToString());
                 }
+                
             }
         }
         return kraftGravitation;
     }
 
-    Vector3 BerechneGravitationsKraft(Rigidbody2D gravitationalSource)
+    
+    Vector3 BerechneGravitationsKraft(Rigidbody gravitationalSource)
     {
         Vector3 kraftRichtung = (gravitationalSource.position - m_Rigidbody.position);
         float sqrDst = kraftRichtung.sqrMagnitude;
@@ -58,4 +61,5 @@ public class SpielerBewegungGravitation : MonoBehaviour
         kraftGravitation *= (float)(GravitationsKonstante * gravitationalSource.mass * m_Rigidbody.mass / sqrDst);
         return kraftGravitation;
     }
+    
 }

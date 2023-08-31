@@ -7,7 +7,7 @@ public class SpielerBewegungSteuerung : MonoBehaviour
 {
     SpielerEingabe m_SpielerEingabe;
 
-    Rigidbody2D m_Rigidbody;
+    Rigidbody m_Rigidbody;
     Vector3 m_WinkelGeschwindigkeit3D;
     public float m_Schub;
     public float m_WinkelGeschwindigkeit;
@@ -21,7 +21,7 @@ public class SpielerBewegungSteuerung : MonoBehaviour
         m_SpielerEingabe = GetComponent<SpielerEingabe>();
 
         // Hole Rigidbody von dem GameObject an dem dieses Script zugewiesen ist
-        m_Rigidbody = GetComponent<Rigidbody2D>();
+        m_Rigidbody = GetComponent<Rigidbody>();
 
         // Setze Winkel Geschwindigkeit des Rigidbody (drehe um die Y Achse, 100 Grad pro Sekunde)
         m_WinkelGeschwindigkeit3D = new Vector3(0, 0, m_WinkelGeschwindigkeit);
@@ -30,7 +30,7 @@ public class SpielerBewegungSteuerung : MonoBehaviour
     // Update wird einmal pro Bild aufgerufen
     void Update()
     {
-        transform.GetChild(1).GetComponent<Renderer>().enabled = m_SpielerEingabe.m_Beschleunige;
+        //transform.GetChild(1).GetComponent<Renderer>().enabled = m_SpielerEingabe.m_Beschleunige;
 
         if (m_SpielerEingabe.m_LaserAbfeuern)
         {
@@ -53,7 +53,7 @@ public class SpielerBewegungSteuerung : MonoBehaviour
         }
         else
         {
-            transform.GetChild(3).GetComponent<Renderer>().enabled = false;
+            //transform.GetChild(3).GetComponent<Renderer>().enabled = false;
         }
     }
 
@@ -71,11 +71,15 @@ public class SpielerBewegungSteuerung : MonoBehaviour
 
         if (m_SpielerEingabe.m_DreheGegenUZS)
         {
-            m_Rigidbody.rotation -= m_WinkelGeschwindigkeit;
+            Quaternion deltaRotation = Quaternion.Euler(0, 0, -m_WinkelGeschwindigkeit);
+            m_Rigidbody.MoveRotation(m_Rigidbody.rotation * deltaRotation);
         }
         else if (m_SpielerEingabe.m_DreheImUZS)
         {
-            m_Rigidbody.rotation += m_WinkelGeschwindigkeit;
+
+            Quaternion deltaRotation = Quaternion.Euler(0, 0, m_WinkelGeschwindigkeit);
+            m_Rigidbody.MoveRotation(m_Rigidbody.rotation * deltaRotation);
+
         }
     }
 }
