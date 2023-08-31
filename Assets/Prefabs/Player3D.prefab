@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6386102071766187953}
   - component: {fileID: 6386102071766187965}
-  - component: {fileID: 6386102071766187964}
-  - component: {fileID: 6386102071766187939}
+  - component: {fileID: 6900554915606097265}
+  - component: {fileID: 7856715396170983909}
   - component: {fileID: 6386102071766187937}
-  - component: {fileID: 6386102071766187938}
   - component: {fileID: 6386102071766187943}
   - component: {fileID: 6386102071766187936}
   m_Layer: 7
@@ -55,7 +54,7 @@ MonoBehaviour:
   m_DreheGegenUZS: 0
   m_DreheImUZS: 0
   m_LaserAbfeuern: 0
---- !u!114 &6386102071766187964
+--- !u!114 &6900554915606097265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,13 +63,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6386102071766187954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6358f8b28f005b944ac98cc731e68613, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ab4285b3f8a8c14f8481454a17b4843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Schub: 3
-  m_WinkelGeschwindigkeit: 2
-  m_PrefabLaser: {fileID: 7359715153747703781, guid: 3f0330583f852844388de32e4e285d27, type: 3}
---- !u!114 &6386102071766187939
+  m_Schub: 0
+  m_WinkelGeschwindigkeit: 0
+  m_PrefabLaser: {fileID: 0}
+--- !u!114 &7856715396170983909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,7 +78,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6386102071766187954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7893b1d9610331245bdba5c618d0f55a, type: 3}
+  m_Script: {fileID: 11500000, guid: aab13bb896fbf044c9db01b07d069bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6386102071766187937
@@ -95,20 +94,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LevelGrenzen: {fileID: 0}
---- !u!114 &6386102071766187938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6386102071766187954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21ff38077b34568488e2b92182b188a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ImpulsDerZerstoerung: 100
-  m_PrefabExplosionAnimation: {fileID: 3571097288516071885, guid: 8db63eca8b469414f901cc60c2decb27, type: 3}
 --- !u!136 &6386102071766187943
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -818,7 +818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359049113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7, y: -0.23, z: 0}
+  m_LocalPosition: {x: 4.74, y: -0.38, z: 0}
   m_LocalScale: {x: 1.33, y: 1.33, z: 1.33}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1215,6 +1215,14 @@ PrefabInstance:
     - target: {fileID: 6386102071766187954, guid: 3cc6ab7e0eaf3c741b1c01ef7b82a3e3, type: 3}
       propertyPath: m_Name
       value: Player3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900554915606097265, guid: 3cc6ab7e0eaf3c741b1c01ef7b82a3e3, type: 3}
+      propertyPath: m_Schub
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900554915606097265, guid: 3cc6ab7e0eaf3c741b1c01ef7b82a3e3, type: 3}
+      propertyPath: m_WinkelGeschwindigkeit
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cc6ab7e0eaf3c741b1c01ef7b82a3e3, type: 3}
