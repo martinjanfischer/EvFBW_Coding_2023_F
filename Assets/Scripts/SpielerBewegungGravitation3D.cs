@@ -39,7 +39,7 @@ public class SpielerBewegungGravitation3D : MonoBehaviour
             {
                 //Debug.Log("Planet : ");
                 
-                Rigidbody rigidBodyPlanet = planet.GetComponent<Rigidbody>();
+                Rigidbody2D rigidBodyPlanet = planet.GetComponent<Rigidbody2D>();
                 if (rigidBodyPlanet != null)
                 {
                     //Debug.Log("RigidBody Planet : " + rigidBodyPlanet.mass);
@@ -53,9 +53,13 @@ public class SpielerBewegungGravitation3D : MonoBehaviour
     }
 
     
-    Vector3 BerechneGravitationsKraft(Rigidbody gravitationalSource)
+    Vector3 BerechneGravitationsKraft(Rigidbody2D gravitationalSource)
     {
-        Vector3 kraftRichtung = (gravitationalSource.position - m_Rigidbody.position);
+		Vector3 gravitationalSource3D;
+		gravitationalSource3D.x = gravitationalSource.position.x;
+		gravitationalSource3D.y = gravitationalSource.position.y;
+		gravitationalSource3D.z = m_Rigidbody.position.z;
+        Vector3 kraftRichtung = (gravitationalSource3D - m_Rigidbody.position);
         float sqrDst = kraftRichtung.sqrMagnitude;
         Vector3 kraftGravitation = kraftRichtung.normalized;
         kraftGravitation *= (float)(GravitationsKonstante * gravitationalSource.mass * m_Rigidbody.mass / sqrDst);

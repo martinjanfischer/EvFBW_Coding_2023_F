@@ -16,9 +16,9 @@ public class SpielerKollisionExplosion3D : MonoBehaviour
         // Hole Rigidbody von dem GameObject an dem dieses Script zugewiesen ist
         m_Rigidbody = GetComponent<Rigidbody>();
     }
-
-    // OnCollisionEnter2D wird aufgerufen bei jedem Kollisionsereignis
-    void OnCollisionEnter2D(Collision2D kollision)
+    
+    // OnCollisionEnter wird aufgerufen bei jedem Kollisionsereignis
+    void OnCollisionEnter(Collision kollision)
     {
         if (kollision.gameObject.tag == "Planet")
         {
