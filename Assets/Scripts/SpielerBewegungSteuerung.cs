@@ -13,6 +13,8 @@ public class SpielerBewegungSteuerung : MonoBehaviour
     public float m_WinkelGeschwindigkeit;
 
     public GameObject m_PrefabLaser;
+    public GameObject m_PrefabNachbrenner;
+    public GameObject m_PrefabMuendungsFeuer;
 
     // Start wird aufgerufen bevor das erste Bild aktualisiert wird
     void Start()
@@ -30,13 +32,11 @@ public class SpielerBewegungSteuerung : MonoBehaviour
     // Update wird einmal pro Bild aufgerufen
     void Update()
     {
-        Transform nachbrenner = transform.GetChild(1);
-        nachbrenner.GetComponent<Renderer>().enabled = m_SpielerEingabe.m_Beschleunige;
+        m_PrefabNachbrenner.GetComponent<Renderer>().enabled = m_SpielerEingabe.m_Beschleunige;
 
         if (m_SpielerEingabe.m_LaserAbfeuern)
         {
-            Transform muendungsfeuer = transform.GetChild(3);
-            muendungsfeuer.GetComponent<Renderer>().enabled = true;
+            m_PrefabMuendungsFeuer.GetComponent<Renderer>().enabled = true;
             GameObject objectPrefabLaser = Instantiate(m_PrefabLaser, transform.position, transform.rotation) as GameObject;
             LaserBewegung laserBewegung = objectPrefabLaser.GetComponent("LaserBewegung") as LaserBewegung;
             GameObject[] hintergrundBilder = GameObject.FindGameObjectsWithTag("Background");
@@ -55,8 +55,7 @@ public class SpielerBewegungSteuerung : MonoBehaviour
         }
         else
         {
-            Transform muendungsfeuer = transform.GetChild(3);
-            muendungsfeuer.GetComponent<Renderer>().enabled = false;
+            m_PrefabMuendungsFeuer.GetComponent<Renderer>().enabled = false;
         }
     }
 
