@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6900554915606097265}
   - component: {fileID: 7856715396170983909}
   - component: {fileID: 6386102071766187937}
+  - component: {fileID: 3257988693908585374}
   - component: {fileID: 7915393255766324062}
   - component: {fileID: 6386102071766187943}
   - component: {fileID: 6386102071766187936}
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LevelGrenzen: {fileID: 0}
---- !u!114 &7915393255766324062
+--- !u!114 &3257988693908585374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,6 +104,20 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6386102071766187954}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31708bcde1e23c248a7f92c201a4d7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulsDerZerstoerung: 25
+  m_PrefabExplosionAnimation: {fileID: 0}
+--- !u!114 &7915393255766324062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386102071766187954}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21ff38077b34568488e2b92182b188a1, type: 3}
   m_Name: 

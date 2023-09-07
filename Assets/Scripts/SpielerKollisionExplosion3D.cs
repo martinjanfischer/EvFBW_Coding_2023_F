@@ -20,10 +20,11 @@ public class SpielerKollisionExplosion3D : MonoBehaviour
     // OnCollisionEnter wird aufgerufen bei jedem Kollisionsereignis
     void OnCollisionEnter(Collision kollision)
     {
+        Debug.Log("kollision");
         if (kollision.gameObject.tag == "Planet")
         {
-            //Vector3 kollisionsKraft = kollision.impulse / Time.fixedDeltaTime;
-            //Debug.Log("kollisionsKraft : " + kollisionsKraft.ToString());
+            Vector3 kollisionsKraft = kollision.impulse / Time.fixedDeltaTime;
+            Debug.Log("kollisionsKraft : " + kollisionsKraft.ToString());
             float impuls = kollision.relativeVelocity.magnitude * m_Rigidbody.mass;
             Debug.Log("impuls: " + impuls.ToString());
             if (impuls > m_ImpulsDerZerstoerung)
@@ -35,7 +36,7 @@ public class SpielerKollisionExplosion3D : MonoBehaviour
                     Destroy(objectPrefabExplosionAnimation, 0.5f);
                 }
             }
-            kollision.gameObject.SendMessage("Füge Schaden hinzu", 10);
+            //kollision.gameObject.SendMessage("Füge Schaden hinzu", 10);
         }
     }
 }
