@@ -83,6 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab13bb896fbf044c9db01b07d069bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GravitationsKonstante: 0.0000066743
 --- !u!114 &6386102071766187937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: untitled
       objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: 5781ff022ebbabf4ea4420b29e494c9e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 923a4ff88c507324eb381af263e93b05, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5781ff022ebbabf4ea4420b29e494c9e, type: 3}
 --- !u!4 &6851457736945650592 stripped

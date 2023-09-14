@@ -18,7 +18,7 @@ public class SpielerBewegungGravitation3D : MonoBehaviour
     // Korrekte Gravitations Konstante. Einheiten dyne-cm^2/g^2
     //private const double GravitationsKonstante = 6.6743e-08;
     // Veraenderte Gravitations Konstante. Einheiten dyne-cm^2/g^2 skaliert um Faktor 100
-    private const double GravitationsKonstante = 6.6743e-06;
+    public double GravitationsKonstante = 6.6743e-06;
 
     // FixedUpdate wird einmal pro Bild aufgerufen 
     // und zwar zu einem bestimmten Zeitpunkt 
@@ -39,7 +39,7 @@ public class SpielerBewegungGravitation3D : MonoBehaviour
             {
                 //Debug.Log("Planet : ");
                 
-                Rigidbody2D rigidBodyPlanet = planet.GetComponent<Rigidbody2D>();
+                Rigidbody rigidBodyPlanet = planet.GetComponent<Rigidbody>();
                 if (rigidBodyPlanet != null)
                 {
                     //Debug.Log("RigidBody Planet : " + rigidBodyPlanet.mass);
@@ -53,7 +53,7 @@ public class SpielerBewegungGravitation3D : MonoBehaviour
     }
 
     
-    Vector3 BerechneGravitationsKraft(Rigidbody2D gravitationalSource)
+    Vector3 BerechneGravitationsKraft(Rigidbody gravitationalSource)
     {
 		Vector3 gravitationalSource3D;
 		gravitationalSource3D.x = gravitationalSource.position.x;
