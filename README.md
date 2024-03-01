@@ -9,6 +9,9 @@ Wir arbeiten auf Windows 11 Computern und installieren dort
 [www.gimp.org](https://www.gimp.org/)
 - die Audio Software __Audacity__ von
 [www.audacityteam.org](https://www.audacityteam.org/download/windows/)
+- die Versionskontrollsoftware __git__
+  - Zuerst installieren wir die Basis-Software von [gitforwindows.org](https://gitforwindows.org/)
+  - Dann installieren wir die Software von [tortoisegit.org](https://tortoisegit.org/download/) die die Benutzeroberfläche von dem Windows File Explorer um nützliche Icons und Menüs erweitert
 
 ### Für die Python Programmierer
 - das __Python__ Übersetzer Programm von
