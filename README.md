@@ -20,11 +20,13 @@ Wir arbeiten auf Windows 11 Computern und installieren dort
 [www.jetbrains.com](https://www.jetbrains.com/pycharm/download/#section=windows)
 
 ### Für die Minecraft Mod Programmierer
-- die Community Version der Entwicklungsumgebung __IntelliJ__ von
-[www.jetbrains.com](https://www.jetbrains.com/de-de/idea/download/?section=windows)
+Seht dazu die Beschreibung "Minecraft Mods" in dem folgenden Abschnitt weiter unten.
 
 ### Für die Unity Programmierer
 Seht dazu die Beschreibung des Spiels "Solar Parcour" in dem folgenden Abschnitt weiter unten.
+
+### Für die Unreal Programmierer
+still under construction
 
 ## Solar Parcour
 Das ist ein Spiel was ich für den Programmierkurs
@@ -134,3 +136,43 @@ Dann erscheint ein Fortschrittsbalken und Ihr müsst wieder etwas warten.
 20. Zum Schluss schliesst Ihr Euer Android Smartphone 
 an den Computer an, kopiert die Datei "SolarParcour.apk" auf Euer Smartphone,
 und auf dem Smartphone könnt Ihr dann das Paket installieren.
+
+## Minecraft Mods
+Für das Schreiben von Mods für Minecraft brauchst Du folgendes
+1.	Eltern mit einem __Microsoft Account__ mit __30€ Guthaben__ 
+(XBOX Gutscheine, Kreditkarte, Lastschrift, ...)
+
+2.	__Minecraft: Java & Bedrock Edition for PC__ kaufen auf __minecraft.net__ mit diesem Microsoft Account
+- [Minecraft: Java & Bedrock Edition for PC](https://www.xbox.com/de-DE/games/store/minecraft-java-bedrock-edition-for-pc/9nxp44l49shj)
+
+3.	Nach dem Kauf den __Minecraft Launcher__ für Windows __herunterladen__
+
+4.	In Windows beim __Microsoft Store__ mit dem Microsoft Account __anmelden__
+
+5.	Den __Minecraft Launcher__ auf Windows __starten__
+
+6.	__OpenJDK__ herunterladen und installieren
+damit man in der Sprache Java programmieren kann
+
+7.	__IntelliJ__ herunterladen und installieren
+damit man mit einer vernünftigen Entwicklungsumgebung in Java programmieren kann
+Lade die Community Version der Entwicklungsumgebung __IntelliJ__ herunter von
+[www.jetbrains.com](https://www.jetbrains.com/de-de/idea/download/?section=windows)
+
+8.	Entweder Minecraft __Forge__ Archiv oder Minecraft __Fabric__ Archiv herunterladen
+Forge ist etwas komplizierter als Fabric
+Das Archiv aus Quelltextdateien ist ein __Grundgerüst__ für ein __Mod__ in Minecraft
+und kann schon in Minecraft installiert und ausgeführt werden
+- Software
+  - [https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.html](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.html)
+  - [https://fabricmc.net/use/installer/](https://fabricmc.net/use/installer/)
+
+9. Der youtuber „Kaupenjoe“ hat ein paar tolle Erklärvideos zu Forge und Fabric und fertige Programmierbeispiele im Internet veröffentlicht
+- Forge
+  - [GitHub - Tutorials-By-Kaupenjoe/Forge-Tutorial-1.19](https://github.com/Tutorials-By-Kaupenjoe/Forge-Tutorial-1.19)
+  - [Minecraft 1.19 Forge Modding Tutorials - YouTube](https://www.youtube.com/playlist?list=PLKGarocXCE1HrC60yuTNTGRoZc6hf5Uvl)
+- Fabric
+  - [GitHub - Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.19](https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.19)
+  - [Minecraft 1.19 Fabric Modding Tutorials - YouTube](https://www.youtube.com/playlist?list=PLKGarocXCE1EeLZggaXPJaARxnAbUD8Y_)
+
+10.	Das Forge/Fabric Archiv mit Selbst Programmierten Quelltext und Bilddateien füllen
