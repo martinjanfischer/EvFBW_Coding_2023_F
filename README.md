@@ -153,13 +153,14 @@ Für das Schreiben von Mods für Minecraft brauchst Du folgendes
 
 6.	__OpenJDK__ herunterladen und installieren
 damit man in der Sprache Java programmieren kann
+- [OpenJDK](https://openjdk.org/install/)
 
-7.	__IntelliJ__ herunterladen und installieren
+8.	__IntelliJ__ herunterladen und installieren
 damit man mit einer vernünftigen Entwicklungsumgebung in Java programmieren kann
 Lade die Community Version der Entwicklungsumgebung __IntelliJ__ herunter von
 [www.jetbrains.com](https://www.jetbrains.com/de-de/idea/download/?section=windows)
 
-8.	Entweder Minecraft __Forge__ Archiv oder Minecraft __Fabric__ Archiv herunterladen
+9.	Entweder Minecraft __Forge__ Archiv oder Minecraft __Fabric__ Archiv herunterladen
 Forge ist etwas komplizierter als Fabric
 Das Archiv aus Quelltextdateien ist ein __Grundgerüst__ für ein __Mod__ in Minecraft
 und kann schon in Minecraft installiert und ausgeführt werden
