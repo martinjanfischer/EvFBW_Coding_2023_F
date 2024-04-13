@@ -178,3 +178,32 @@ Im Kurs verwenden wir __Forge__
   - [Minecraft 1.19 Fabric Modding Tutorials - YouTube](https://www.youtube.com/playlist?list=PLKGarocXCE1EeLZggaXPJaARxnAbUD8Y_)
 
 10.	Das Forge/Fabric Archiv mit Selbst Programmierten Quelltext und Bilddateien füllen
+
+### Kaupen Joe
+#### ASSETS & DOWNLOAD LINKS
+[GitHub Repo: ](https://github.com/Tutorials-By-Kaupe...)
+[JDK Download: ](https://adoptium.net/temurin/releases)
+[IntelliJ Download: ](https://www.jetbrains.com/idea/download/)
+[Forge Download: ](https://files.minecraftforge.net/net/...)
+[Java Playlist:    • Java Introduction for Minecraft Modding  ](https://www.youtube.com/playlist?list=PLKGarocXCE1FeXvEogpjz4SvHxF_FJRO6)
+
+#### TIMESTAMPS
+0:00 Intro
+0:31 Downloading and Installing the JDK
+1:00 Downloading and Installing IntelliJ IDEA
+1:20 Downloading The Forge MDK and Setting it up
+2:29 IMPORTANT: You will need some Java Knowledge!
+3:23 Opening IntelliJ for the first time! 
+5:04 !IMPORTANT FOLLOW THESE STEPS!
+5:47 Setting the Project Window appearance! 
+6:16 Changes in the build.gradle File
+7:14 IMPORTANT: Explaining the MOD ID
+7:40 Continuing to change the build.gradle file
+8:47 Changing Contents and Location of the ExampleMod Class
+11:15 Changes in the mods.toml File
+12:27 Running the genIntelliJRuns Task
+13:10 Starting Minecraft in the Dev Environment for the first time! 
+13:56 How to build a JAR file for your mod? 
+14:51 (Optional) Set up a GitHub Repository for your Project!
+18:13 Everything is done!
+18:23 Outro
