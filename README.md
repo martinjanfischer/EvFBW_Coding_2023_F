@@ -160,10 +160,11 @@ damit man mit einer vernünftigen Entwicklungsumgebung in Java programmieren kan
 Lade die Community Version der Entwicklungsumgebung __IntelliJ__ herunter von
 [www.jetbrains.com](https://www.jetbrains.com/de-de/idea/download/?section=windows)
 
-9.	Entweder Minecraft __Forge__ Archiv oder Minecraft __Fabric__ Archiv herunterladen
-Forge ist etwas komplizierter als Fabric
+9.	Entweder Minecraft __Forge__ Archiv oder Minecraft __Fabric__ Archiv herunterladen.
+Forge ist etwas komplizierter als Fabric.
 Das Archiv aus Quelltextdateien ist ein __Grundgerüst__ für ein __Mod__ in Minecraft
-und kann schon in Minecraft installiert und ausgeführt werden
+und kann schon in Minecraft installiert und ausgeführt werden.
+Im Kurs verwenden wir __Forge__
 - Software
   - [https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.html](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.html)
   - [https://fabricmc.net/use/installer/](https://fabricmc.net/use/installer/)
